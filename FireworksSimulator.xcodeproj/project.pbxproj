@@ -1,0 +1,1643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2121900FEACD4FD4B1BD822E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A544E1278C1B43499669B956 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E5D5CCB088AE48A88B2D5B33 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		4CC734A24BAA415B8770D8AF /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BD90C2A56812461EB8FC2782 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				5FDCD6FFFF8D41ECBDFFC201 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				F5CF0115D40A461A99A118F1 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		4DF4F357029B451E8950677A /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0F965A5763BA45E89DA72FED /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				B34A8D9B87D74E329D034E5E /* CMake Rules */,
+			);
+			dependencies = (
+				755D27F89C8C4B1CBC817626 /* PBXTargetDependency */,
+				DF897DB763F2450CBE627328 /* PBXTargetDependency */,
+				4B33C404246D47BD9EFF8017 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D89ADB05BA9E4E90949CC3E9 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DEE7519E4FE04FC5A693A245 /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				E712784089B64CC6AA0CEB14 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0A82251921DD4F709CD27D7C /* TrailParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68534DBC3AAA484383549D3D /* TrailParticle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1DABE399221547D5848DAC79 /* mach_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 91ECF72C8A214ED9A42B4CC8 /* mach_time.c */; settings = {COMPILER_FLAGS = ""; }; };
+		21115710AEBC428B9AB7B7A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CFF9298E86A448618471962C /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2C1E4A083D3D4BBCA0C4D177 /* iokit_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = F1597C47C5444910B4F17915 /* iokit_joystick.m */; settings = {COMPILER_FLAGS = ""; }; };
+		31404E5179F14DA4AD8A9E2E /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 71E361D43F2E4FC2BB5700C9 /* context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		41C1EBC65A464877A8887B59 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3686E0F26AE4BE3B736C479 /* Camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4CE93A4594214596B9A37BFF /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 42E7097588244989ACC67E83 /* init.c */; settings = {COMPILER_FLAGS = ""; }; };
+		51EA60AE96E1414390282C87 /* posix_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F33059810124AB6AFE0646E /* posix_tls.c */; settings = {COMPILER_FLAGS = ""; }; };
+		57FF31430A1F4528BE1BE5B6 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C85C39883FAE458AA9BB3FDC /* Particle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5866725A175949B7B1CFB858 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = BE06A6B5E5C44FC9A71B58D6 /* cocoa_window.m */; settings = {COMPILER_FLAGS = ""; }; };
+		5DF9214A71A34AC789EAC912 /* GLSL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C7AE187DA6504CE09B0BE0A8 /* GLSL.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6AA86946609F4A1CA807F68F /* MatrixStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0FE15AF2248C4D82B8D45436 /* MatrixStack.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6CD2276FAA284A61A53D6982 /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = A4461089AC8541E9A87E946C /* cocoa_init.m */; settings = {COMPILER_FLAGS = ""; }; };
+		7A927A1CAD034C719DC0A6D4 /* StandardExplosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3EAA420DAD481F861C557E /* StandardExplosion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7BA05BBA152E476F9C3FE889 /* SimpleParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB1037F208934B60ADCDBD1A /* SimpleParticle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		84A2733E40ED4D91A7E9B101 /* SparkleParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55E50F4F173B42B098208D12 /* SparkleParticle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		89642FF7E7264C91B9EB7DC4 /* InitialParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 328B0C488BBC451F87B69E34 /* InitialParticle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8B8187BB202940AE89A59FFB /* Explosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 405058B2BBF648848C9E3963 /* Explosion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8B90E42AB2F04C90974CAD3A /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = B3ED8E500E4941D2975AC991 /* nsgl_context.m */; settings = {COMPILER_FLAGS = ""; }; };
+		9D9FD871C4E3494FBDCE3727 /* Firework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E7DD83290240F6A7D1534D /* Firework.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AB4803472EB841A38D742D7A /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E3AE4A003471E801A758C /* Texture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B7479FBF6DFF4AC9BF091DDF /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A7C696BA54C4790B7B1E771 /* Program.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C762E46196AC4BBEAA625BAE /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = 27B2C3465A9447948F809728 /* monitor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		CAC55A35DD364E83B6DF195D /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = C1938501895F4B939EFD3798 /* input.c */; settings = {COMPILER_FLAGS = ""; }; };
+		DD89B74C68614DDF8AC68245 /* tinyfiledialogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F168AE768CE4F09A981A6AD /* tinyfiledialogs.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E7850AB81C96ECFB00A24643 /* ShapeExplosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7850AB61C96ECFB00A24643 /* ShapeExplosion.cpp */; };
+		E7850ABB1C96FD2D00A24643 /* SparkleExplosion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E7850AB91C96FD2D00A24643 /* SparkleExplosion.cpp */; };
+		ED10B5F1B44E4C959013B10B /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = ECE617FDB91C44D49658CFEE /* window.c */; settings = {COMPILER_FLAGS = ""; }; };
+		FE52655C8203490B914DB6C5 /* SparkleEmitterParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C3CC98DCFD24C538B705DB4 /* SparkleEmitterParticle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FE692051007D4F7689006073 /* TrailEmitterParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B284D5504E5F45E7A3F92297 /* TrailEmitterParticle.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FFA9E60D3F5A42279D9E82C9 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = F61DBB590B6848DEB13AFC70 /* cocoa_monitor.m */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15CDE35C39AA47C9B1C6FF1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E3930BFB0E4C3E99982076;
+			remoteInfo = glfw;
+		};
+		7348674EB66B4266BD95DA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2121900FEACD4FD4B1BD822E;
+			remoteInfo = ZERO_CHECK;
+		};
+		7C2F36A74F144C4CBB7664AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFD79EB508CD41339C0472CF;
+			remoteInfo = FireworksSimulator;
+		};
+		C6EB240DE4EB4EFB93DA5713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2121900FEACD4FD4B1BD822E;
+			remoteInfo = ZERO_CHECK;
+		};
+		E7D1722FC63F468AAD8CAE19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E3930BFB0E4C3E99982076;
+			remoteInfo = glfw;
+		};
+		FED1B054A86E4D5CAA54CA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF4F357029B451E8950677A;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A5E3AE4A003471E801A758C /* Texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Texture.cpp; path = src/Texture.cpp; sourceTree = SOURCE_ROOT; };
+		0C801E30051042B2A49EDA09 /* iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = "../../../libs/glfw-3.1.2/src/iokit_joystick.h"; sourceTree = SOURCE_ROOT; };
+		0EE85B363118437188FEBBF0 /* simple_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simple_vert.glsl; path = resources/simple_vert.glsl; sourceTree = SOURCE_ROOT; };
+		0FE15AF2248C4D82B8D45436 /* MatrixStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MatrixStack.cpp; path = src/MatrixStack.cpp; sourceTree = SOURCE_ROOT; };
+		11A319EF15AA4B398A9808EA /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "../../../libs/glfw-3.1.2/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		16306F49132E48CE8BC1215D /* Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = src/Camera.h; sourceTree = SOURCE_ROOT; };
+		27B2C3465A9447948F809728 /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "../../../libs/glfw-3.1.2/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		2A7C696BA54C4790B7B1E771 /* Program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Program.cpp; path = src/Program.cpp; sourceTree = SOURCE_ROOT; };
+		2BFD06FD8D064175B0B86BBB /* cpu_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cpu_frag.glsl; path = resources/cpu_frag.glsl; sourceTree = SOURCE_ROOT; };
+		328B0C488BBC451F87B69E34 /* InitialParticle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InitialParticle.cpp; path = src/InitialParticle.cpp; sourceTree = SOURCE_ROOT; };
+		3976EE10199B4E2E93A29559 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "../../../libs/glfw-3.1.2/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		3C3CC98DCFD24C538B705DB4 /* SparkleEmitterParticle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparkleEmitterParticle.cpp; path = src/SparkleEmitterParticle.cpp; sourceTree = SOURCE_ROOT; };
+		405058B2BBF648848C9E3963 /* Explosion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Explosion.cpp; path = src/Explosion.cpp; sourceTree = SOURCE_ROOT; };
+		42E7097588244989ACC67E83 /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "../../../libs/glfw-3.1.2/src/init.c"; sourceTree = SOURCE_ROOT; };
+		466C2059AF5746A590EDFC26 /* firework_geom.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = firework_geom.glsl; path = resources/firework_geom.glsl; sourceTree = SOURCE_ROOT; };
+		4B86E5D2A456413AA92FCBB8 /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "../../../libs/glfw-3.1.2/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		4F168AE768CE4F09A981A6AD /* tinyfiledialogs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tinyfiledialogs.cpp; path = src/tinyfiledialogs.cpp; sourceTree = SOURCE_ROOT; };
+		50377BB8298B4AA1AA479E41 /* StandardExplosion.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = StandardExplosion.hpp; path = src/StandardExplosion.hpp; sourceTree = SOURCE_ROOT; };
+		55E50F4F173B42B098208D12 /* SparkleParticle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparkleParticle.cpp; path = src/SparkleParticle.cpp; sourceTree = SOURCE_ROOT; };
+		58AE2D8713E6417F9DD9C6D3 /* Parameters.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Parameters.hpp; path = src/Parameters.hpp; sourceTree = SOURCE_ROOT; };
+		59160E6BEC994433BC6D9F19 /* cpu_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cpu_vert.glsl; path = resources/cpu_vert.glsl; sourceTree = SOURCE_ROOT; };
+		5F80043D0279479B92863938 /* tex_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = tex_vert.glsl; path = resources/tex_vert.glsl; sourceTree = SOURCE_ROOT; };
+		65F5FFEC29B24B56B53E2D40 /* nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "../../../libs/glfw-3.1.2/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		68534DBC3AAA484383549D3D /* TrailParticle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TrailParticle.cpp; path = src/TrailParticle.cpp; sourceTree = SOURCE_ROOT; };
+		6F33059810124AB6AFE0646E /* posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "../../../libs/glfw-3.1.2/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
+		6F5FDC63B7B34B509700650D /* Firework.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Firework.hpp; path = src/Firework.hpp; sourceTree = SOURCE_ROOT; };
+		71E361D43F2E4FC2BB5700C9 /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "../../../libs/glfw-3.1.2/src/context.c"; sourceTree = SOURCE_ROOT; };
+		73C21447DA0E45EDA0855B2D /* Particle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Particle.hpp; path = src/Particle.hpp; sourceTree = SOURCE_ROOT; };
+		761ACA2AAF574389B6EC87A5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7FD7C16B739D4087A97151C1 /* MatrixStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MatrixStack.h; path = src/MatrixStack.h; sourceTree = SOURCE_ROOT; };
+		82465D91059844C286C9ACA1 /* Texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Texture.h; path = src/Texture.h; sourceTree = SOURCE_ROOT; };
+		84F7395A49D24A6FADE0A248 /* TrailEmitterParticle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = TrailEmitterParticle.hpp; path = src/TrailEmitterParticle.hpp; sourceTree = SOURCE_ROOT; };
+		85DEADE84E4543458D73C61D /* SimpleParticle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SimpleParticle.hpp; path = src/SimpleParticle.hpp; sourceTree = SOURCE_ROOT; };
+		8B4683A09696434E9958441E /* InitialParticle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = InitialParticle.hpp; path = src/InitialParticle.hpp; sourceTree = SOURCE_ROOT; };
+		8C9EB15786E043FB8A49A364 /* SparkleEmitterParticle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SparkleEmitterParticle.hpp; path = src/SparkleEmitterParticle.hpp; sourceTree = SOURCE_ROOT; };
+		8D3EAA420DAD481F861C557E /* StandardExplosion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StandardExplosion.cpp; path = src/StandardExplosion.cpp; sourceTree = SOURCE_ROOT; };
+		8DF06DB8A85A43F5BB4A4565 /* grid_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = grid_frag.glsl; path = resources/grid_frag.glsl; sourceTree = SOURCE_ROOT; };
+		8E8EE64D7F7E42CD808A9CB1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		91ECF72C8A214ED9A42B4CC8 /* mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = "../../../libs/glfw-3.1.2/src/mach_time.c"; sourceTree = SOURCE_ROOT; };
+		99A4D6CCFD97467BBE01DFA7 /* posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "../../../libs/glfw-3.1.2/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
+		9DFABA646BA942E5A154C83E /* Program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Program.h; path = src/Program.h; sourceTree = SOURCE_ROOT; };
+		A2CC4CE0C1584925AD76BEB8 /* tinyfiledialogs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tinyfiledialogs.h; path = src/tinyfiledialogs.h; sourceTree = SOURCE_ROOT; };
+		A4461089AC8541E9A87E946C /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "../../../libs/glfw-3.1.2/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		A76167C1D4EB453782529983 /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "../../../libs/glfw-3.1.2/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		AA2BB69774824E5C884B0C00 /* firework_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = firework_frag.glsl; path = resources/firework_frag.glsl; sourceTree = SOURCE_ROOT; };
+		AC02232CC7B24BC8AC8EA825 /* tiny_obj_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiny_obj_loader.h; path = src/tiny_obj_loader.h; sourceTree = SOURCE_ROOT; };
+		B089F38332F441518549B90E /* glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../../libs/glfw-3.1.2/debug/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		B284D5504E5F45E7A3F92297 /* TrailEmitterParticle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TrailEmitterParticle.cpp; path = src/TrailEmitterParticle.cpp; sourceTree = SOURCE_ROOT; };
+		B3ED8E500E4941D2975AC991 /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "../../../libs/glfw-3.1.2/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		B793A43FB4F04922BDEC7FB0 /* SparkleParticle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SparkleParticle.hpp; path = src/SparkleParticle.hpp; sourceTree = SOURCE_ROOT; };
+		BAD52B6FAFF4407B863FEA87 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "../../../libs/glfw-3.1.2/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		BC46042A0D244D47B38479B4 /* grid_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = grid_vert.glsl; path = resources/grid_vert.glsl; sourceTree = SOURCE_ROOT; };
+		BE06A6B5E5C44FC9A71B58D6 /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "../../../libs/glfw-3.1.2/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		BF46220E1A784747A9E9685B /* GLSL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLSL.h; path = src/GLSL.h; sourceTree = SOURCE_ROOT; };
+		C01A0104AF50457DBE614B38 /* stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/stb_image.h; sourceTree = SOURCE_ROOT; };
+		C1938501895F4B939EFD3798 /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "../../../libs/glfw-3.1.2/src/input.c"; sourceTree = SOURCE_ROOT; };
+		C7AE187DA6504CE09B0BE0A8 /* GLSL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLSL.cpp; path = src/GLSL.cpp; sourceTree = SOURCE_ROOT; };
+		C85C39883FAE458AA9BB3FDC /* Particle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Particle.cpp; path = src/Particle.cpp; sourceTree = SOURCE_ROOT; };
+		C87BF1753AE1426A9CD804B9 /* TrailParticle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = TrailParticle.hpp; path = src/TrailParticle.hpp; sourceTree = SOURCE_ROOT; };
+		CB1037F208934B60ADCDBD1A /* SimpleParticle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleParticle.cpp; path = src/SimpleParticle.cpp; sourceTree = SOURCE_ROOT; };
+		CFF9298E86A448618471962C /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		D0A6534498864078B8D265DA /* Explosion.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Explosion.hpp; path = src/Explosion.hpp; sourceTree = SOURCE_ROOT; };
+		DA42CD0E34DD42AE8E118250 /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "../../../libs/glfw-3.1.2/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		E2C555514EA04B5F82CA1B2E /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3686E0F26AE4BE3B736C479 /* Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		E397749A64954765B1D905FF /* simple_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simple_frag.glsl; path = resources/simple_frag.glsl; sourceTree = SOURCE_ROOT; };
+		E3E7DD83290240F6A7D1534D /* Firework.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Firework.cpp; path = src/Firework.cpp; sourceTree = SOURCE_ROOT; };
+		E7850AB61C96ECFB00A24643 /* ShapeExplosion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShapeExplosion.cpp; path = src/ShapeExplosion.cpp; sourceTree = "<group>"; };
+		E7850AB71C96ECFB00A24643 /* ShapeExplosion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ShapeExplosion.hpp; path = src/ShapeExplosion.hpp; sourceTree = "<group>"; };
+		E7850AB91C96FD2D00A24643 /* SparkleExplosion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SparkleExplosion.cpp; path = src/SparkleExplosion.cpp; sourceTree = "<group>"; };
+		E7850ABA1C96FD2D00A24643 /* SparkleExplosion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SparkleExplosion.hpp; path = src/SparkleExplosion.hpp; sourceTree = "<group>"; };
+		E868C61D71D14C9587858AF3 /* firework_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = firework_vert.glsl; path = resources/firework_vert.glsl; sourceTree = SOURCE_ROOT; };
+		ECE617FDB91C44D49658CFEE /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "../../../libs/glfw-3.1.2/src/window.c"; sourceTree = SOURCE_ROOT; };
+		EEB37C93639C4C5998AF69C1 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F1597C47C5444910B4F17915 /* iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = "../../../libs/glfw-3.1.2/src/iokit_joystick.m"; sourceTree = SOURCE_ROOT; };
+		F2D1109B7E244E7982D5BF2F /* tex_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = tex_frag.glsl; path = resources/tex_frag.glsl; sourceTree = SOURCE_ROOT; };
+		F61DBB590B6848DEB13AFC70 /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "../../../libs/glfw-3.1.2/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		FABD4813C7904169AF8D0A6C /* FireworksSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = FireworksSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00C082CCBF334F8D944DD2CF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		08AF9033A8664AD4AF12B4ED /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				7AA044BEA22B4C4DAAED61B0 /* Source Files */,
+				E55AC51BF8E84C22BEF1F8CA /* Header Files */,
+				BAD52B6FAFF4407B863FEA87 /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		233C3FAACE5B43C79CD2451C = {
+			isa = PBXGroup;
+			children = (
+				4A1053074C5447309FC49647 /* Sources */,
+				A2FFBD544D14483394EDEF72 /* Resources */,
+				E4BE9DE9597D42A89B74E79C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A1053074C5447309FC49647 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FD4292F14AFF43E3A2223EA8 /* ZERO_CHECK */,
+				A9357BB616664DE7A11271C6 /* ALL_BUILD */,
+				F718C494BED145EFB889166C /* FireworksSimulator */,
+				8B7990BED72C4325BEFD2CA9 /* uninstall */,
+				C847904EABE246B591E31D65 /* GLFW3 */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		7AA044BEA22B4C4DAAED61B0 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4461089AC8541E9A87E946C /* cocoa_init.m */,
+				F61DBB590B6848DEB13AFC70 /* cocoa_monitor.m */,
+				BE06A6B5E5C44FC9A71B58D6 /* cocoa_window.m */,
+				71E361D43F2E4FC2BB5700C9 /* context.c */,
+				42E7097588244989ACC67E83 /* init.c */,
+				C1938501895F4B939EFD3798 /* input.c */,
+				F1597C47C5444910B4F17915 /* iokit_joystick.m */,
+				91ECF72C8A214ED9A42B4CC8 /* mach_time.c */,
+				27B2C3465A9447948F809728 /* monitor.c */,
+				B3ED8E500E4941D2975AC991 /* nsgl_context.m */,
+				6F33059810124AB6AFE0646E /* posix_tls.c */,
+				ECE617FDB91C44D49658CFEE /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8B7990BED72C4325BEFD2CA9 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				91C6D7C417D54147B237EB3F /* CMake Rules */,
+				3976EE10199B4E2E93A29559 /* CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		91C6D7C417D54147B237EB3F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A2FFBD544D14483394EDEF72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A87EBA2C4C334CE39863D6B8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				16306F49132E48CE8BC1215D /* Camera.h */,
+				D0A6534498864078B8D265DA /* Explosion.hpp */,
+				6F5FDC63B7B34B509700650D /* Firework.hpp */,
+				BF46220E1A784747A9E9685B /* GLSL.h */,
+				8B4683A09696434E9958441E /* InitialParticle.hpp */,
+				7FD7C16B739D4087A97151C1 /* MatrixStack.h */,
+				58AE2D8713E6417F9DD9C6D3 /* Parameters.hpp */,
+				73C21447DA0E45EDA0855B2D /* Particle.hpp */,
+				9DFABA646BA942E5A154C83E /* Program.h */,
+				E7850AB71C96ECFB00A24643 /* ShapeExplosion.hpp */,
+				85DEADE84E4543458D73C61D /* SimpleParticle.hpp */,
+				8C9EB15786E043FB8A49A364 /* SparkleEmitterParticle.hpp */,
+				E7850ABA1C96FD2D00A24643 /* SparkleExplosion.hpp */,
+				B793A43FB4F04922BDEC7FB0 /* SparkleParticle.hpp */,
+				50377BB8298B4AA1AA479E41 /* StandardExplosion.hpp */,
+				82465D91059844C286C9ACA1 /* Texture.h */,
+				84F7395A49D24A6FADE0A248 /* TrailEmitterParticle.hpp */,
+				C87BF1753AE1426A9CD804B9 /* TrailParticle.hpp */,
+				C01A0104AF50457DBE614B38 /* stb_image.h */,
+				AC02232CC7B24BC8AC8EA825 /* tiny_obj_loader.h */,
+				A2CC4CE0C1584925AD76BEB8 /* tinyfiledialogs.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A9357BB616664DE7A11271C6 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				00C082CCBF334F8D944DD2CF /* CMake Rules */,
+				761ACA2AAF574389B6EC87A5 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		C847904EABE246B591E31D65 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				08AF9033A8664AD4AF12B4ED /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		E4BE9DE9597D42A89B74E79C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FABD4813C7904169AF8D0A6C /* FireworksSimulator */,
+				E2C555514EA04B5F82CA1B2E /* libglfw3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E55AC51BF8E84C22BEF1F8CA /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B089F38332F441518549B90E /* glfw_config.h */,
+				11A319EF15AA4B398A9808EA /* glfw3.h */,
+				DA42CD0E34DD42AE8E118250 /* glfw3native.h */,
+				A76167C1D4EB453782529983 /* cocoa_platform.h */,
+				4B86E5D2A456413AA92FCBB8 /* internal.h */,
+				0C801E30051042B2A49EDA09 /* iokit_joystick.h */,
+				65F5FFEC29B24B56B53E2D40 /* nsgl_context.h */,
+				99A4D6CCFD97467BBE01DFA7 /* posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		E756E7ABEAFE40A58D330823 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3686E0F26AE4BE3B736C479 /* Camera.cpp */,
+				405058B2BBF648848C9E3963 /* Explosion.cpp */,
+				E3E7DD83290240F6A7D1534D /* Firework.cpp */,
+				C7AE187DA6504CE09B0BE0A8 /* GLSL.cpp */,
+				328B0C488BBC451F87B69E34 /* InitialParticle.cpp */,
+				0FE15AF2248C4D82B8D45436 /* MatrixStack.cpp */,
+				C85C39883FAE458AA9BB3FDC /* Particle.cpp */,
+				2A7C696BA54C4790B7B1E771 /* Program.cpp */,
+				E7850AB61C96ECFB00A24643 /* ShapeExplosion.cpp */,
+				CB1037F208934B60ADCDBD1A /* SimpleParticle.cpp */,
+				3C3CC98DCFD24C538B705DB4 /* SparkleEmitterParticle.cpp */,
+				E7850AB91C96FD2D00A24643 /* SparkleExplosion.cpp */,
+				55E50F4F173B42B098208D12 /* SparkleParticle.cpp */,
+				8D3EAA420DAD481F861C557E /* StandardExplosion.cpp */,
+				0A5E3AE4A003471E801A758C /* Texture.cpp */,
+				B284D5504E5F45E7A3F92297 /* TrailEmitterParticle.cpp */,
+				68534DBC3AAA484383549D3D /* TrailParticle.cpp */,
+				CFF9298E86A448618471962C /* main.cpp */,
+				4F168AE768CE4F09A981A6AD /* tinyfiledialogs.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E8A5404D82DC40B0A1298B35 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F718C494BED145EFB889166C /* FireworksSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				E756E7ABEAFE40A58D330823 /* Source Files */,
+				A87EBA2C4C334CE39863D6B8 /* Header Files */,
+				8E8EE64D7F7E42CD808A9CB1 /* CMakeLists.txt */,
+				2BFD06FD8D064175B0B86BBB /* cpu_frag.glsl */,
+				59160E6BEC994433BC6D9F19 /* cpu_vert.glsl */,
+				AA2BB69774824E5C884B0C00 /* firework_frag.glsl */,
+				466C2059AF5746A590EDFC26 /* firework_geom.glsl */,
+				E868C61D71D14C9587858AF3 /* firework_vert.glsl */,
+				8DF06DB8A85A43F5BB4A4565 /* grid_frag.glsl */,
+				BC46042A0D244D47B38479B4 /* grid_vert.glsl */,
+				E397749A64954765B1D905FF /* simple_frag.glsl */,
+				0EE85B363118437188FEBBF0 /* simple_vert.glsl */,
+				F2D1109B7E244E7982D5BF2F /* tex_frag.glsl */,
+				5F80043D0279479B92863938 /* tex_vert.glsl */,
+			);
+			name = FireworksSimulator;
+			sourceTree = "<group>";
+		};
+		FD4292F14AFF43E3A2223EA8 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				E8A5404D82DC40B0A1298B35 /* CMake Rules */,
+				EEB37C93639C4C5998AF69C1 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E3930BFB0E4C3E99982076 /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B55990AD3F2C4267AEFED534 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				E1DE0D50764D49ACA45446C6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = E2C555514EA04B5F82CA1B2E /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DFD79EB508CD41339C0472CF /* FireworksSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94CC3B3F003466F8DC85660 /* Build configuration list for PBXNativeTarget "FireworksSimulator" */;
+			buildPhases = (
+				066314C0D62A405F83ED2985 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				796908007014492BA0305D3B /* PBXTargetDependency */,
+				EE6038E6D135499B82BCF139 /* PBXTargetDependency */,
+			);
+			name = FireworksSimulator;
+			productName = FireworksSimulator;
+			productReference = FABD4813C7904169AF8D0A6C /* FireworksSimulator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3F7D1EE42A34CE0810F5B7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = E6FF89D5DCAC4A64A98FCADF /* Build configuration list for PBXProject "FireworksSimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 233C3FAACE5B43C79CD2451C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DF4F357029B451E8950677A /* ALL_BUILD */,
+				DFD79EB508CD41339C0472CF /* FireworksSimulator */,
+				2121900FEACD4FD4B1BD822E /* ZERO_CHECK */,
+				4CC734A24BAA415B8770D8AF /* install */,
+				D89ADB05BA9E4E90949CC3E9 /* uninstall */,
+				03E3930BFB0E4C3E99982076 /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FDCD6FFFF8D41ECBDFFC201 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/Classwork/CPE474/Final -f /Users/imeeder/Classwork/CPE474/Final/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B34A8D9B87D74E329D034E5E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/Classwork/CPE474/Final -f /Users/imeeder/Classwork/CPE474/Final/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E5D5CCB088AE48A88B2D5B33 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/Classwork/CPE474/Final -f /Users/imeeder/Classwork/CPE474/Final/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E712784089B64CC6AA0CEB14 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/libs/glfw-3.1.2/debug -f /Users/imeeder/libs/glfw-3.1.2/debug/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		066314C0D62A405F83ED2985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C1EBC65A464877A8887B59 /* Camera.cpp in Sources */,
+				8B8187BB202940AE89A59FFB /* Explosion.cpp in Sources */,
+				9D9FD871C4E3494FBDCE3727 /* Firework.cpp in Sources */,
+				5DF9214A71A34AC789EAC912 /* GLSL.cpp in Sources */,
+				E7850ABB1C96FD2D00A24643 /* SparkleExplosion.cpp in Sources */,
+				89642FF7E7264C91B9EB7DC4 /* InitialParticle.cpp in Sources */,
+				6AA86946609F4A1CA807F68F /* MatrixStack.cpp in Sources */,
+				57FF31430A1F4528BE1BE5B6 /* Particle.cpp in Sources */,
+				B7479FBF6DFF4AC9BF091DDF /* Program.cpp in Sources */,
+				7BA05BBA152E476F9C3FE889 /* SimpleParticle.cpp in Sources */,
+				FE52655C8203490B914DB6C5 /* SparkleEmitterParticle.cpp in Sources */,
+				84A2733E40ED4D91A7E9B101 /* SparkleParticle.cpp in Sources */,
+				E7850AB81C96ECFB00A24643 /* ShapeExplosion.cpp in Sources */,
+				7A927A1CAD034C719DC0A6D4 /* StandardExplosion.cpp in Sources */,
+				AB4803472EB841A38D742D7A /* Texture.cpp in Sources */,
+				FE692051007D4F7689006073 /* TrailEmitterParticle.cpp in Sources */,
+				0A82251921DD4F709CD27D7C /* TrailParticle.cpp in Sources */,
+				21115710AEBC428B9AB7B7A8 /* main.cpp in Sources */,
+				DD89B74C68614DDF8AC68245 /* tinyfiledialogs.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DE0D50764D49ACA45446C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD2276FAA284A61A53D6982 /* cocoa_init.m in Sources */,
+				FFA9E60D3F5A42279D9E82C9 /* cocoa_monitor.m in Sources */,
+				5866725A175949B7B1CFB858 /* cocoa_window.m in Sources */,
+				31404E5179F14DA4AD8A9E2E /* context.c in Sources */,
+				4CE93A4594214596B9A37BFF /* init.c in Sources */,
+				CAC55A35DD364E83B6DF195D /* input.c in Sources */,
+				2C1E4A083D3D4BBCA0C4D177 /* iokit_joystick.m in Sources */,
+				1DABE399221547D5848DAC79 /* mach_time.c in Sources */,
+				C762E46196AC4BBEAA625BAE /* monitor.c in Sources */,
+				8B90E42AB2F04C90974CAD3A /* nsgl_context.m in Sources */,
+				51EA60AE96E1414390282C87 /* posix_tls.c in Sources */,
+				ED10B5F1B44E4C959013B10B /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B33C404246D47BD9EFF8017 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2121900FEACD4FD4B1BD822E /* ZERO_CHECK */;
+			targetProxy = C6EB240DE4EB4EFB93DA5713 /* PBXContainerItemProxy */;
+		};
+		755D27F89C8C4B1CBC817626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFD79EB508CD41339C0472CF /* FireworksSimulator */;
+			targetProxy = 7C2F36A74F144C4CBB7664AB /* PBXContainerItemProxy */;
+		};
+		796908007014492BA0305D3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E3930BFB0E4C3E99982076 /* glfw */;
+			targetProxy = E7D1722FC63F468AAD8CAE19 /* PBXContainerItemProxy */;
+		};
+		DF897DB763F2450CBE627328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E3930BFB0E4C3E99982076 /* glfw */;
+			targetProxy = 15CDE35C39AA47C9B1C6FF1F /* PBXContainerItemProxy */;
+		};
+		EE6038E6D135499B82BCF139 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2121900FEACD4FD4B1BD822E /* ZERO_CHECK */;
+			targetProxy = 7348674EB66B4266BD95DA14 /* PBXContainerItemProxy */;
+		};
+		F5CF0115D40A461A99A118F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF4F357029B451E8950677A /* ALL_BUILD */;
+			targetProxy = FED1B054A86E4D5CAA54CA06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		009649ED5FED4285809BE688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		01EB86C73907474BB13F7D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/Release/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/lib/libAntTweakBar.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = FireworksSimulator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		0983C64874594AC19282ED88 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		0CC225537E42413EA2A358BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		0CCD213EC0754B12B0396188 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		1E5AEFBDA67E48E7969785B1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		25DD3F8FF792470D9D14847D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/Debug/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/lib/libAntTweakBar.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = FireworksSimulator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		336541ECBBB9423AB13E9B4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		37F88286375E4440B98D11CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		3B3B48B9DA2549E9A4127DA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final/build;
+			};
+			name = Release;
+		};
+		4B5C3DD430794EB1BDA01404 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		6BA5634260ED403AAFADDABA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		83628FA8DC334178A5886330 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final/build;
+			};
+			name = RelWithDebInfo;
+		};
+		8FA316FDF0BF4DE682EA0B6E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		96D7C2A0484442FAA3674FB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		A479AE187185415785D23064 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B2D769E7947F43A6AEA308DF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B87B6F2D3C94476FB8827EFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		B9B37EF0706F408AB5F02BC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		BB7033645A6A42B0BC41C5C0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/MinSizeRel/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/lib/libAntTweakBar.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = FireworksSimulator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C315A77F233C43EF8364F68C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C882EB6413294724B999B1D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		D7BDCA5D7EE0456DA79EEB22 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E209DEDFE33F4944A21B0E81 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/RelWithDebInfo/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/lib/libAntTweakBar.dylib,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = FireworksSimulator;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E32A0F262170445988730064 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		E8DBFBB7D8D74246A6A9E7F8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+					/Users/imeeder/Classwork/CPE474/Final/lib/AntTweakBar/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		ED5B9FE4380A4326B729D15B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final/build;
+			};
+			name = Debug;
+		};
+		EFE8A4E668854641AE36B455 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Final/build;
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F965A5763BA45E89DA72FED /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CCD213EC0754B12B0396188 /* Debug */,
+				B87B6F2D3C94476FB8827EFE /* Release */,
+				E32A0F262170445988730064 /* MinSizeRel */,
+				E8DBFBB7D8D74246A6A9E7F8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A544E1278C1B43499669B956 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5C3DD430794EB1BDA01404 /* Debug */,
+				0CC225537E42413EA2A358BD /* Release */,
+				0983C64874594AC19282ED88 /* MinSizeRel */,
+				B2D769E7947F43A6AEA308DF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A94CC3B3F003466F8DC85660 /* Build configuration list for PBXNativeTarget "FireworksSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DD3F8FF792470D9D14847D /* Debug */,
+				01EB86C73907474BB13F7D3C /* Release */,
+				BB7033645A6A42B0BC41C5C0 /* MinSizeRel */,
+				E209DEDFE33F4944A21B0E81 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B55990AD3F2C4267AEFED534 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C882EB6413294724B999B1D2 /* Debug */,
+				009649ED5FED4285809BE688 /* Release */,
+				8FA316FDF0BF4DE682EA0B6E /* MinSizeRel */,
+				A479AE187185415785D23064 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD90C2A56812461EB8FC2782 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B37EF0706F408AB5F02BC0 /* Debug */,
+				96D7C2A0484442FAA3674FB0 /* Release */,
+				C315A77F233C43EF8364F68C /* MinSizeRel */,
+				1E5AEFBDA67E48E7969785B1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DEE7519E4FE04FC5A693A245 /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				336541ECBBB9423AB13E9B4E /* Debug */,
+				37F88286375E4440B98D11CF /* Release */,
+				D7BDCA5D7EE0456DA79EEB22 /* MinSizeRel */,
+				6BA5634260ED403AAFADDABA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E6FF89D5DCAC4A64A98FCADF /* Build configuration list for PBXProject "FireworksSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED5B9FE4380A4326B729D15B /* Debug */,
+				3B3B48B9DA2549E9A4127DA9 /* Release */,
+				EFE8A4E668854641AE36B455 /* MinSizeRel */,
+				83628FA8DC334178A5886330 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3F7D1EE42A34CE0810F5B7D /* Project object */;
+}

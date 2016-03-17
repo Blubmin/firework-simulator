@@ -1,0 +1,5 @@
+/Users/imeeder/libs/glfw-3.1.2/debug/CMakeFiles/ZERO_CHECK.dir
+/Users/imeeder/libs/glfw-3.1.2/debug/CMakeFiles/ALL_BUILD.dir
+/Users/imeeder/libs/glfw-3.1.2/debug/CMakeFiles/uninstall.dir
+/Users/imeeder/libs/glfw-3.1.2/debug/src/CMakeFiles/glfw.dir
+/Users/imeeder/Classwork/CPE474/Final/CMakeFiles/FireworksSimulator.dir

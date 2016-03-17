@@ -1,0 +1,1553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2080EFA1DA964ADA94DEF596 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4DBC5E9C696A46F7A4E41937 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				06C1F1ACCF7D4622B37DF7E3 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5E50E8252B59499282D02384 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A89B2E8FF3A44AA2B115846D /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 71BDC3B0FC4B455EAFE97350 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				58282F8D45D549DC83A19071 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		BE4B96A2E64F49D9AA92725D /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 58B63C1E79824463A850B717 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F37923F5179147CCA9DEAF5C /* CMake Rules */,
+			);
+			dependencies = (
+				AEA35D075351441BBEA346A7 /* PBXTargetDependency */,
+				209AD58043C346708321A095 /* PBXTargetDependency */,
+				47D24C00298B48DB91AFBBFC /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		E6CD37CE3D3F48168831DEE2 /* uninstall */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 30A4EC337F4A4FEF960FEC0E /* Build configuration list for PBXAggregateTarget "uninstall" */;
+			buildPhases = (
+				9B50AADF204A4BA8A3D1EDF0 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = uninstall;
+			productName = uninstall;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00EE317AFBFC4E5EA17E8D03 /* Cheb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FA586AC502D4E808F50504D /* Cheb.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0A24364A689B408ABD5ED5C7 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D83EB56E5D649468ADB7154 /* Program.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1FED9566652A4092935EDF63 /* nsgl_context.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED9B02853604BF0BA185B12 /* nsgl_context.m */; settings = {COMPILER_FLAGS = ""; }; };
+		32A7F9C958B24A1D9BDF3041 /* MatrixStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD756E58E7FA4BF280C82A13 /* MatrixStack.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		400708CC2368478088D5E407 /* window.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DF039BF3B48168B260CAF /* window.c */; settings = {COMPILER_FLAGS = ""; }; };
+		475B979AFCD54F869835EBE0 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A443DA1214A478FAB2F79E5 /* input.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4ABB56B4C5544F5997571D96 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0472634AB9354B0997D5D45C /* main.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		55A4902A2C314C8DA2171C13 /* cocoa_monitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E888C41F5E745129A9C6B46 /* cocoa_monitor.m */; settings = {COMPILER_FLAGS = ""; }; };
+		89A6A90FA54344A9B56BC79B /* GLSL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF1DFAAA547345A0B384F1F4 /* GLSL.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9F0EED48F394400DB26CD937 /* mach_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D39AE4EBA47425FB6E3864D /* mach_time.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A3967E84360F4730AC70E6D0 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA2BF12AA7D43ACB7EDB6A0 /* init.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A4FF3F87141A4E33A3FE9668 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = FA3774B7A13E4555BFCEC36B /* context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A59FB9874B3E41FDABDBA56E /* cocoa_init.m in Sources */ = {isa = PBXBuildFile; fileRef = 053795733472435B86714531 /* cocoa_init.m */; settings = {COMPILER_FLAGS = ""; }; };
+		A745DDA8992043349545D4F9 /* posix_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = AB445640BFE247C8A31F600C /* posix_tls.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B3958C117E3D4890A4F4CF01 /* Skeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E2E28CB5B0EB4BDF94AA8872 /* Skeleton.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B63944D320F04B02AC101122 /* cocoa_window.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C8843FC69420E89C2B3AB /* cocoa_window.m */; settings = {COMPILER_FLAGS = ""; }; };
+		B982AA21F1784764A6AEA792 /* monitor.c in Sources */ = {isa = PBXBuildFile; fileRef = ABF1FACAC2014A2C80F85B98 /* monitor.c */; settings = {COMPILER_FLAGS = ""; }; };
+		BC7C9F85CD7A4D47A2EE9BA9 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA368B2539A24390A5C34B40 /* Camera.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EC0E3BC3156749329B920E8B /* iokit_joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = 523722688AB143F0BC6790FA /* iokit_joystick.m */; settings = {COMPILER_FLAGS = ""; }; };
+		F3502485602049FE9E622B28 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19224D91053B4472A7C2E476 /* Shape.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FC500A81C5084F3085688A9F /* Animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 540ADA75BA1D4B05976AE481 /* Animation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FFC8811BF57B40B495DD68E9 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90FC170BEE0C4D3DB98F6723 /* Texture.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E0F7212CBD9454986C8D07A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD616CC17B794703B777C993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE4B96A2E64F49D9AA92725D;
+			remoteInfo = ALL_BUILD;
+		};
+		27DEEEBD2B964325A67B6BDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD616CC17B794703B777C993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5983F532C8C04929BFA0EECA;
+			remoteInfo = glfw;
+		};
+		52741D0054304011A5ECB2B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD616CC17B794703B777C993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7935066ED08346A88ED9889B;
+			remoteInfo = Assignment2;
+		};
+		594E84D820EC4D8ABAB86D6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD616CC17B794703B777C993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89B2E8FF3A44AA2B115846D;
+			remoteInfo = ZERO_CHECK;
+		};
+		67F3A14961ED4492B9E86CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD616CC17B794703B777C993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5983F532C8C04929BFA0EECA;
+			remoteInfo = glfw;
+		};
+		DF926A89E3EC45DA8CE20AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD616CC17B794703B777C993 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89B2E8FF3A44AA2B115846D;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0472634AB9354B0997D5D45C /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		053795733472435B86714531 /* cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "../../../../libs/glfw-3.1.2/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		093C8843FC69420E89C2B3AB /* cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "../../../../libs/glfw-3.1.2/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		132EBABE631C447D8E24E819 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "../../../../libs/glfw-3.1.2/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		19224D91053B4472A7C2E476 /* Shape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Shape.cpp; path = src/Shape.cpp; sourceTree = SOURCE_ROOT; };
+		1F8DAFB40F704099A8BDE028 /* glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "../../../../libs/glfw-3.1.2/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		35DF21FFABE0495F919B79AB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3725AF9F3BAE4363828331E0 /* simple_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simple_vert.glsl; path = resources/simple_vert.glsl; sourceTree = SOURCE_ROOT; };
+		3908D37E176E4688BD16FCE1 /* libglfw3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E95220E706E4225B4CF3C0C /* nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "../../../../libs/glfw-3.1.2/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		49DC63B872364EB784FBE6EF /* simple_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = simple_frag.glsl; path = resources/simple_frag.glsl; sourceTree = SOURCE_ROOT; };
+		4CA2BF12AA7D43ACB7EDB6A0 /* init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "../../../../libs/glfw-3.1.2/src/init.c"; sourceTree = SOURCE_ROOT; };
+		4CCE141E83E94E9E9440341E /* glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "../../../../libs/glfw-3.1.2/debug/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		4ED9B02853604BF0BA185B12 /* nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "../../../../libs/glfw-3.1.2/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		523722688AB143F0BC6790FA /* iokit_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = iokit_joystick.m; path = "../../../../libs/glfw-3.1.2/src/iokit_joystick.m"; sourceTree = SOURCE_ROOT; };
+		534197B14FFE4F998FA6D5A0 /* tex_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = tex_frag.glsl; path = resources/tex_frag.glsl; sourceTree = SOURCE_ROOT; };
+		540ADA75BA1D4B05976AE481 /* Animation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Animation.cpp; path = src/Animation.cpp; sourceTree = SOURCE_ROOT; };
+		58E6D90B5CF847DAA6823376 /* tex_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = tex_vert.glsl; path = resources/tex_vert.glsl; sourceTree = SOURCE_ROOT; };
+		5BC677E9F536469EAF4EE67B /* cpu_frag.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cpu_frag.glsl; path = resources/cpu_frag.glsl; sourceTree = SOURCE_ROOT; };
+		5D39AE4EBA47425FB6E3864D /* mach_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = mach_time.c; path = "../../../../libs/glfw-3.1.2/src/mach_time.c"; sourceTree = SOURCE_ROOT; };
+		5E363AEE1B2B427899CA6598 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		61F139FF34484A4B8371D030 /* Program.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Program.h; path = src/Program.h; sourceTree = SOURCE_ROOT; };
+		6BC35E138F8D45A8B8D59886 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "../../../../libs/glfw-3.1.2/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		6F0DF039BF3B48168B260CAF /* window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "../../../../libs/glfw-3.1.2/src/window.c"; sourceTree = SOURCE_ROOT; };
+		6FF7D4227A0346A1873F5B1F /* Cheb.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Cheb.hpp; path = src/Cheb.hpp; sourceTree = SOURCE_ROOT; };
+		78B505C1EB2845EDA97B8AB6 /* MatrixStack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MatrixStack.h; path = src/MatrixStack.h; sourceTree = SOURCE_ROOT; };
+		795CAFB095754F18B713C21C /* cpu_vert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cpu_vert.glsl; path = resources/cpu_vert.glsl; sourceTree = SOURCE_ROOT; };
+		79F6345A8B0642208658EDB0 /* internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "../../../../libs/glfw-3.1.2/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		7A443DA1214A478FAB2F79E5 /* input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "../../../../libs/glfw-3.1.2/src/input.c"; sourceTree = SOURCE_ROOT; };
+		7E888C41F5E745129A9C6B46 /* cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "../../../../libs/glfw-3.1.2/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		82E87AF28CF8407D8B6ECA9A /* Shape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Shape.h; path = src/Shape.h; sourceTree = SOURCE_ROOT; };
+		8D83EB56E5D649468ADB7154 /* Program.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Program.cpp; path = src/Program.cpp; sourceTree = SOURCE_ROOT; };
+		90FC170BEE0C4D3DB98F6723 /* Texture.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Texture.cpp; path = src/Texture.cpp; sourceTree = SOURCE_ROOT; };
+		9933DEFEFC25433385C27577 /* glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "../../../../libs/glfw-3.1.2/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		9FA586AC502D4E808F50504D /* Cheb.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Cheb.cpp; path = src/Cheb.cpp; sourceTree = SOURCE_ROOT; };
+		A64BC4D86A8F431494EB7463 /* iokit_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iokit_joystick.h; path = "../../../../libs/glfw-3.1.2/src/iokit_joystick.h"; sourceTree = SOURCE_ROOT; };
+		A8F6CAF282BC40B2AC8782C1 /* Camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Camera.h; path = src/Camera.h; sourceTree = SOURCE_ROOT; };
+		A98583462D474D45979F6877 /* tiny_obj_loader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiny_obj_loader.h; path = src/tiny_obj_loader.h; sourceTree = SOURCE_ROOT; };
+		AB445640BFE247C8A31F600C /* posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "../../../../libs/glfw-3.1.2/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
+		ABF1FACAC2014A2C80F85B98 /* monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "../../../../libs/glfw-3.1.2/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		AD756E58E7FA4BF280C82A13 /* MatrixStack.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MatrixStack.cpp; path = src/MatrixStack.cpp; sourceTree = SOURCE_ROOT; };
+		B6A129EF41AE42C9B8BBF3E3 /* GLSL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GLSL.h; path = src/GLSL.h; sourceTree = SOURCE_ROOT; };
+		DD43442EA8514601872DEEAD /* cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "../../../../libs/glfw-3.1.2/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		DDE52B5CFBBB4DBCB711E227 /* Animation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Animation.hpp; path = src/Animation.hpp; sourceTree = SOURCE_ROOT; };
+		E03DE7458BEF4696AE13581F /* Texture.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Texture.h; path = src/Texture.h; sourceTree = SOURCE_ROOT; };
+		E2E28CB5B0EB4BDF94AA8872 /* Skeleton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Skeleton.cpp; path = src/Skeleton.cpp; sourceTree = SOURCE_ROOT; };
+		EA368B2539A24390A5C34B40 /* Camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Camera.cpp; path = src/Camera.cpp; sourceTree = SOURCE_ROOT; };
+		EC3FF224A9E94FFE80EC6B7B /* posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "../../../../libs/glfw-3.1.2/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
+		ECB9314256CF4DFFBB6F1A1A /* stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/stb_image.h; sourceTree = SOURCE_ROOT; };
+		EEBA104D15AF46B7A8F6731F /* Assignment2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Assignment2; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1DFAAA547345A0B384F1F4 /* GLSL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GLSL.cpp; path = src/GLSL.cpp; sourceTree = SOURCE_ROOT; };
+		F81FF741D02C4EAEAF068CDA /* Skeleton.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Skeleton.hpp; path = src/Skeleton.hpp; sourceTree = SOURCE_ROOT; };
+		F9AE51C20ED2413D8FEA4C3D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FA3774B7A13E4555BFCEC36B /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "../../../../libs/glfw-3.1.2/src/context.c"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1D38921F1F43400B88852158 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		257749A421FD4A1F99C6E22A = {
+			isa = PBXGroup;
+			children = (
+				5A6EA91A201A474982782D45 /* Sources */,
+				5E762AB05A1E421396872E11 /* Resources */,
+				337496D13D4A4222920FEDF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		337496D13D4A4222920FEDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA104D15AF46B7A8F6731F /* Assignment2 */,
+				3908D37E176E4688BD16FCE1 /* libglfw3.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A6EA91A201A474982782D45 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AF8FA3BB35534E1FB3E35BC0 /* ALL_BUILD */,
+				786C418655F843C5B7464587 /* ZERO_CHECK */,
+				E7ADDFDF06CC4B70BBD74F00 /* Assignment2 */,
+				90913BBA5E454CE582181D57 /* uninstall */,
+				63F3D5CBF09E41A887E39218 /* GLFW3 */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5E762AB05A1E421396872E11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63F3D5CBF09E41A887E39218 /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				8F473B065A2A4823964FAB3A /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		786C418655F843C5B7464587 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				1D38921F1F43400B88852158 /* CMake Rules */,
+				5E363AEE1B2B427899CA6598 /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		8F473B065A2A4823964FAB3A /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBF39F63CD46309AD112D7 /* Source Files */,
+				CA9E5312928D4C7C88F0E65B /* Header Files */,
+				132EBABE631C447D8E24E819 /* CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		90913BBA5E454CE582181D57 /* uninstall */ = {
+			isa = PBXGroup;
+			children = (
+				DBAAACA7E8524A5BB718655D /* CMake Rules */,
+				6BC35E138F8D45A8B8D59886 /* CMakeLists.txt */,
+			);
+			name = uninstall;
+			sourceTree = "<group>";
+		};
+		AF8FA3BB35534E1FB3E35BC0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				CBCBE2B23AD346488DC7BA1A /* CMake Rules */,
+				F9AE51C20ED2413D8FEA4C3D /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		C2480555BBE74425B680E9AC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				540ADA75BA1D4B05976AE481 /* Animation.cpp */,
+				EA368B2539A24390A5C34B40 /* Camera.cpp */,
+				9FA586AC502D4E808F50504D /* Cheb.cpp */,
+				EF1DFAAA547345A0B384F1F4 /* GLSL.cpp */,
+				AD756E58E7FA4BF280C82A13 /* MatrixStack.cpp */,
+				8D83EB56E5D649468ADB7154 /* Program.cpp */,
+				19224D91053B4472A7C2E476 /* Shape.cpp */,
+				E2E28CB5B0EB4BDF94AA8872 /* Skeleton.cpp */,
+				90FC170BEE0C4D3DB98F6723 /* Texture.cpp */,
+				0472634AB9354B0997D5D45C /* main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CA1FF89DA6B4479692484930 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDE52B5CFBBB4DBCB711E227 /* Animation.hpp */,
+				A8F6CAF282BC40B2AC8782C1 /* Camera.h */,
+				6FF7D4227A0346A1873F5B1F /* Cheb.hpp */,
+				B6A129EF41AE42C9B8BBF3E3 /* GLSL.h */,
+				78B505C1EB2845EDA97B8AB6 /* MatrixStack.h */,
+				61F139FF34484A4B8371D030 /* Program.h */,
+				82E87AF28CF8407D8B6ECA9A /* Shape.h */,
+				F81FF741D02C4EAEAF068CDA /* Skeleton.hpp */,
+				E03DE7458BEF4696AE13581F /* Texture.h */,
+				ECB9314256CF4DFFBB6F1A1A /* stb_image.h */,
+				A98583462D474D45979F6877 /* tiny_obj_loader.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CA9E5312928D4C7C88F0E65B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CCE141E83E94E9E9440341E /* glfw_config.h */,
+				9933DEFEFC25433385C27577 /* glfw3.h */,
+				1F8DAFB40F704099A8BDE028 /* glfw3native.h */,
+				DD43442EA8514601872DEEAD /* cocoa_platform.h */,
+				79F6345A8B0642208658EDB0 /* internal.h */,
+				A64BC4D86A8F431494EB7463 /* iokit_joystick.h */,
+				3E95220E706E4225B4CF3C0C /* nsgl_context.h */,
+				EC3FF224A9E94FFE80EC6B7B /* posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CBCBE2B23AD346488DC7BA1A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DBAAACA7E8524A5BB718655D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DCEBF39F63CD46309AD112D7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				053795733472435B86714531 /* cocoa_init.m */,
+				7E888C41F5E745129A9C6B46 /* cocoa_monitor.m */,
+				093C8843FC69420E89C2B3AB /* cocoa_window.m */,
+				FA3774B7A13E4555BFCEC36B /* context.c */,
+				4CA2BF12AA7D43ACB7EDB6A0 /* init.c */,
+				7A443DA1214A478FAB2F79E5 /* input.c */,
+				523722688AB143F0BC6790FA /* iokit_joystick.m */,
+				5D39AE4EBA47425FB6E3864D /* mach_time.c */,
+				ABF1FACAC2014A2C80F85B98 /* monitor.c */,
+				4ED9B02853604BF0BA185B12 /* nsgl_context.m */,
+				AB445640BFE247C8A31F600C /* posix_tls.c */,
+				6F0DF039BF3B48168B260CAF /* window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E7ADDFDF06CC4B70BBD74F00 /* Assignment2 */ = {
+			isa = PBXGroup;
+			children = (
+				C2480555BBE74425B680E9AC /* Source Files */,
+				CA1FF89DA6B4479692484930 /* Header Files */,
+				35DF21FFABE0495F919B79AB /* CMakeLists.txt */,
+				5BC677E9F536469EAF4EE67B /* cpu_frag.glsl */,
+				795CAFB095754F18B713C21C /* cpu_vert.glsl */,
+				49DC63B872364EB784FBE6EF /* simple_frag.glsl */,
+				3725AF9F3BAE4363828331E0 /* simple_vert.glsl */,
+				534197B14FFE4F998FA6D5A0 /* tex_frag.glsl */,
+				58E6D90B5CF847DAA6823376 /* tex_vert.glsl */,
+			);
+			name = Assignment2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5983F532C8C04929BFA0EECA /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFCC8390DA144CB9914EA641 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				29099760700B491683C9C592 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 3908D37E176E4688BD16FCE1 /* libglfw3.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7935066ED08346A88ED9889B /* Assignment2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1374375C93B84F6CA88F3DF0 /* Build configuration list for PBXNativeTarget "Assignment2" */;
+			buildPhases = (
+				FC97F8588C134C3A9416D1C5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA0C710B8F66428A800D7BC1 /* PBXTargetDependency */,
+				3236E7F6BFF04B149EF19F1A /* PBXTargetDependency */,
+			);
+			name = Assignment2;
+			productName = Assignment2;
+			productReference = EEBA104D15AF46B7A8F6731F /* Assignment2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD616CC17B794703B777C993 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 1E388C1EF6E041B9AC7CD345 /* Build configuration list for PBXProject "Assignment2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 257749A421FD4A1F99C6E22A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4B96A2E64F49D9AA92725D /* ALL_BUILD */,
+				7935066ED08346A88ED9889B /* Assignment2 */,
+				A89B2E8FF3A44AA2B115846D /* ZERO_CHECK */,
+				2080EFA1DA964ADA94DEF596 /* install */,
+				E6CD37CE3D3F48168831DEE2 /* uninstall */,
+				5983F532C8C04929BFA0EECA /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C1F1ACCF7D4622B37DF7E3 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/Classwork/CPE474/Assignments/A2 -f /Users/imeeder/Classwork/CPE474/Assignments/A2/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		58282F8D45D549DC83A19071 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/Classwork/CPE474/Assignments/A2 -f /Users/imeeder/Classwork/CPE474/Assignments/A2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		9B50AADF204A4BA8A3D1EDF0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/libs/glfw-3.1.2/debug -f /Users/imeeder/libs/glfw-3.1.2/debug/CMakeScripts/uninstall_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F37923F5179147CCA9DEAF5C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/imeeder/Classwork/CPE474/Assignments/A2 -f /Users/imeeder/Classwork/CPE474/Assignments/A2/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29099760700B491683C9C592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59FB9874B3E41FDABDBA56E /* cocoa_init.m in Sources */,
+				55A4902A2C314C8DA2171C13 /* cocoa_monitor.m in Sources */,
+				B63944D320F04B02AC101122 /* cocoa_window.m in Sources */,
+				A4FF3F87141A4E33A3FE9668 /* context.c in Sources */,
+				A3967E84360F4730AC70E6D0 /* init.c in Sources */,
+				475B979AFCD54F869835EBE0 /* input.c in Sources */,
+				EC0E3BC3156749329B920E8B /* iokit_joystick.m in Sources */,
+				9F0EED48F394400DB26CD937 /* mach_time.c in Sources */,
+				B982AA21F1784764A6AEA792 /* monitor.c in Sources */,
+				1FED9566652A4092935EDF63 /* nsgl_context.m in Sources */,
+				A745DDA8992043349545D4F9 /* posix_tls.c in Sources */,
+				400708CC2368478088D5E407 /* window.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC97F8588C134C3A9416D1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC500A81C5084F3085688A9F /* Animation.cpp in Sources */,
+				BC7C9F85CD7A4D47A2EE9BA9 /* Camera.cpp in Sources */,
+				00EE317AFBFC4E5EA17E8D03 /* Cheb.cpp in Sources */,
+				89A6A90FA54344A9B56BC79B /* GLSL.cpp in Sources */,
+				32A7F9C958B24A1D9BDF3041 /* MatrixStack.cpp in Sources */,
+				0A24364A689B408ABD5ED5C7 /* Program.cpp in Sources */,
+				F3502485602049FE9E622B28 /* Shape.cpp in Sources */,
+				B3958C117E3D4890A4F4CF01 /* Skeleton.cpp in Sources */,
+				FFC8811BF57B40B495DD68E9 /* Texture.cpp in Sources */,
+				4ABB56B4C5544F5997571D96 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		209AD58043C346708321A095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5983F532C8C04929BFA0EECA /* glfw */;
+			targetProxy = 67F3A14961ED4492B9E86CAD /* PBXContainerItemProxy */;
+		};
+		3236E7F6BFF04B149EF19F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89B2E8FF3A44AA2B115846D /* ZERO_CHECK */;
+			targetProxy = 594E84D820EC4D8ABAB86D6A /* PBXContainerItemProxy */;
+		};
+		47D24C00298B48DB91AFBBFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89B2E8FF3A44AA2B115846D /* ZERO_CHECK */;
+			targetProxy = DF926A89E3EC45DA8CE20AFA /* PBXContainerItemProxy */;
+		};
+		5E50E8252B59499282D02384 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE4B96A2E64F49D9AA92725D /* ALL_BUILD */;
+			targetProxy = 1E0F7212CBD9454986C8D07A /* PBXContainerItemProxy */;
+		};
+		AEA35D075351441BBEA346A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7935066ED08346A88ED9889B /* Assignment2 */;
+			targetProxy = 52741D0054304011A5ECB2B2 /* PBXContainerItemProxy */;
+		};
+		CA0C710B8F66428A800D7BC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5983F532C8C04929BFA0EECA /* glfw */;
+			targetProxy = 27DEEEBD2B964325A67B6BDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		092F9381601E4041B06FE39D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		0FB06161FBC447B9BB049B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/Release/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		1136A27D23134F8696BDF7F8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/MinSizeRel/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		12E54382A89E46D88B19C010 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/RelWithDebInfo/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		14055F335270472583384ADB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		15E6A68D86B549A4954E1762 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		27227B15DDF1488E87B867B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		283C3FB8BE2E4297A930C1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		2EAF55C8D31F46BD90533BF1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		313385B2A3FF4BA3AE1F0E50 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		5335EE9254B14FEDAC1EB109 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		54B523F2D2E14D8185EA2A5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++0x",
+					"-Wall",
+					"-pedantic",
+				);
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src/Debug/libglfw3.a",
+					"-framework",
+					Cocoa,
+					"-framework",
+					OpenGL,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreFoundation,
+					"-framework",
+					CoreVideo,
+					"/Users/imeeder/libs/glew-1.13.0/lib/libGLEW.a",
+					"-framework",
+					OpenGL,
+					"-framework",
+					Cocoa,
+					"-framework",
+					IOKit,
+					"-framework",
+					CoreVideo,
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		54B5F2F8312E4B75A2AB5BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		5CEC9B1F73CC4DF3BC674266 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		5F2BD67DE7414ACA8CCC2697 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		69E8AF30675F4C3A8770A4F8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6AC513C8E3D249A0B5DB718F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		6DA7A3407D7343EC829B9A7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2/build;
+			};
+			name = Debug;
+		};
+		753D1621B5AD4C1082BF9C67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		82BE5B69FEDA472DB711A61B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "/Users/imeeder/libs/eigen-3.2.6";
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = uninstall;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		85A15DA257A5473DAF392E92 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2/build;
+			};
+			name = MinSizeRel;
+		};
+		8671D207A5AE4B5F9759E998 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B96DFE3460144FFB925505EE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C0A80EC3F9044BD2B8E42052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C1C5728A2FF147B180E08338 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					_GLFW_USE_CONFIG_H,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/src",
+					"/Users/imeeder/libs/glfw-3.1.2/debug/src",
+				);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/imeeder/libs/glfw-3.1.2/debug/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C68F28559C18471FBFE7E76A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		CFBBDA88AC344511942F54DD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/imeeder/libs/eigen-3.2.6",
+					"/Users/imeeder/libs/glfw-3.1.2/include",
+					"/Users/imeeder/libs/glew-1.13.0/include",
+				);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		ED93A5E521D84D57A8944DAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/imeeder/Classwork/CPE474/Assignments/A2/build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1374375C93B84F6CA88F3DF0 /* Build configuration list for PBXNativeTarget "Assignment2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54B523F2D2E14D8185EA2A5D /* Debug */,
+				0FB06161FBC447B9BB049B90 /* Release */,
+				1136A27D23134F8696BDF7F8 /* MinSizeRel */,
+				12E54382A89E46D88B19C010 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1E388C1EF6E041B9AC7CD345 /* Build configuration list for PBXProject "Assignment2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DA7A3407D7343EC829B9A7B /* Debug */,
+				ED93A5E521D84D57A8944DAD /* Release */,
+				85A15DA257A5473DAF392E92 /* MinSizeRel */,
+				69E8AF30675F4C3A8770A4F8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		30A4EC337F4A4FEF960FEC0E /* Build configuration list for PBXAggregateTarget "uninstall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				092F9381601E4041B06FE39D /* Debug */,
+				15E6A68D86B549A4954E1762 /* Release */,
+				313385B2A3FF4BA3AE1F0E50 /* MinSizeRel */,
+				82BE5B69FEDA472DB711A61B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4DBC5E9C696A46F7A4E41937 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283C3FB8BE2E4297A930C1D6 /* Debug */,
+				753D1621B5AD4C1082BF9C67 /* Release */,
+				CFBBDA88AC344511942F54DD /* MinSizeRel */,
+				14055F335270472583384ADB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58B63C1E79824463A850B717 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54B5F2F8312E4B75A2AB5BF8 /* Debug */,
+				C68F28559C18471FBFE7E76A /* Release */,
+				2EAF55C8D31F46BD90533BF1 /* MinSizeRel */,
+				5CEC9B1F73CC4DF3BC674266 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71BDC3B0FC4B455EAFE97350 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC513C8E3D249A0B5DB718F /* Debug */,
+				C0A80EC3F9044BD2B8E42052 /* Release */,
+				5F2BD67DE7414ACA8CCC2697 /* MinSizeRel */,
+				B96DFE3460144FFB925505EE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EFCC8390DA144CB9914EA641 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5335EE9254B14FEDAC1EB109 /* Debug */,
+				27227B15DDF1488E87B867B8 /* Release */,
+				C1C5728A2FF147B180E08338 /* MinSizeRel */,
+				8671D207A5AE4B5F9759E998 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD616CC17B794703B777C993 /* Project object */;
+}
